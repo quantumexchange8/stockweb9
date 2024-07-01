@@ -7,7 +7,7 @@ Route::get('/', function () {
 })->name('index');
 
 Route::prefix('/about')->group(function() {
-    Route::get('/about', function () {
+    Route::get('/', function () {
         return view('about/About');
     })->name('about');
 
@@ -28,9 +28,40 @@ Route::prefix('/about')->group(function() {
     })->name('executive_management');
 });
 
-Route::get('/services', function () {
-    return view('services/Services');
-})->name('services');
+Route::prefix('/services')->group(function() {
+    Route::get('/', function () {
+        return view('services/Services');
+    })->name('services');
+
+    Route::get('/investment_management_philosophy', function() {
+        return view('services.InvestmentManagementPhilosophy');
+    })->name('investment_management_philosophy');
+
+    Route::get('/bespoke_financial_planning', function() {
+        return view('services.BespokeFinancialPlanning');
+    })->name('bespoke_financial_planning');
+
+    Route::get('/retirement_planning', function() {
+        return view('services.RetirementPlanning');
+    })->name('retirement_planning');
+
+    Route::get('/corporate_solutions', function() {
+        return view('services.CorporateSolutions');
+    })->name('corporate_solutions');
+
+    Route::get('/risk_management', function() {
+        return view('services.RiskManagement');
+    })->name('risk_management');
+    
+    Route::get('/alternative_investments', function() {
+        return view('services.AlternativeInvestments');
+    })->name('alternative_investments');
+
+    Route::get('/asset_diversification', function() {
+        return view('services.AssetDiversification');
+    })->name('asset_diversification');
+
+});
 
 Route::get('/corporate_governance', function () {
     return view('CorporateGovernance');

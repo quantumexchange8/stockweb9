@@ -63,14 +63,14 @@
                 <div class="single-footer-widget">
                     <div class="our-info">
                         <div class="footer-logo">
-                            <a href="index.html">
-                                <img src="images/footer/footer-logo.png" alt="Awesome Logo">
+                            <a href="{{ route('index') }}">
+                                <img src="{{ asset('images/footer/footer-logo.png') }}" alt="Awesome Logo">
                             </a>
                         </div>
                         <div class="text">
                             <p>Our team offers  most up to date, sustainable manufacturing solutions. teachings of the great explorer of the truth We only source materials from tried and trusted suppliers, we have built an enviable reputation in the consumer goods, heavy industry.</p>
                             <div class="about-company">
-                                <a href="#">More About Company <span class="icon-arrows"></span></a>
+                                <a href="{{ route('about') }}">More About Company <span class="icon-arrows"></span></a>
                             </div>
                             <div class="bottom">
                                 <span>Visit Our Office</span> 
@@ -109,7 +109,7 @@
             </div>
             <!--End single footer widget-->
             <!--Start single footer widget-->
-            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+            {{-- <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
                 <div class="single-footer-widget pdtop-50">
                     <div class="title">
                         <h3>Recent Post</h3>
@@ -126,7 +126,7 @@
                         </li>      
                     </ul>    
                 </div>
-            </div>
+            </div> --}}
             <!--End single footer widget-->
             
         </div>

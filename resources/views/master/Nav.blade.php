@@ -77,13 +77,13 @@
                                     </li>
                                     <li class="dropdown"><a href="{{ route('services') }}">Services</a>
                                         <ul>
-                                            <li><a href="">Investment Management Philosophy</a></li>
-                                            <li><a href="">Bespoke Financial Planning</a></li>
-                                            <li><a href="">Retirement Planning</a></li>
-                                            <li><a href="">Corporate Solutions</a></li>
-                                            <li><a href="">Risk Management</a></li>
-                                            <li><a href="">Alternative Investments</a></li>
-                                            <li><a href="">Asset Diversification</a></li>
+                                            <li><a href="{{ route('investment_management_philosophy') }}">Investment Management Philosophy</a></li>
+                                            <li><a href="{{ route('bespoke_financial_planning') }}">Bespoke Financial Planning</a></li>
+                                            <li><a href="{{ route('retirement_planning') }}">Retirement Planning</a></li>
+                                            <li><a href="{{ route('corporate_solutions') }}">Corporate Solutions</a></li>
+                                            <li><a href="{{ route('risk_management') }}">Risk Management</a></li>
+                                            <li><a href="{{ route('alternative_investments') }}">Alternative Investments</a></li>
+                                            <li><a href="{{ route('asset_diversification') }}">Asset Diversification</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ route('corporate_governance') }}">Corporate Governance</a></li>
@@ -101,7 +101,7 @@
                             <div class="seach-toggle"><i class="fa fa-search"></i></div>
                             <ul class="search-box">
                                 <li>
-                                    <form method="post" action="index.html">
+                                    <form method="post" action="{{ route('index') }}">
                                         <div class="form-group">
                                             <input type="search" name="search" placeholder="Search Here" required>
                                             <button type="submit"><i class="fa fa-search"></i></button>
